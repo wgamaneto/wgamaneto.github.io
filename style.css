@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: monospace;
-  color: #03506F;
+  color: #004aad;
 }
 
 h1 {
   font-size: 50px;
   margin-bottom: 0px;
 }
+
 h2 {
   margin-top: 0px;
   margin-bottom: 40px;
@@ -89,7 +90,7 @@ h2 {
   font-size: 16px;
 }
 
-h5{
+h5 {
   margin-top: 0;
   margin-bottom: 0;
   color: #100000;
