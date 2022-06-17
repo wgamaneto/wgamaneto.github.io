@@ -13,7 +13,17 @@ h1 {
 }
 
 body {
-  background-image: url(./img/022\ Morpheus\ Den.png)
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.linha {
+  width: 250px;
+  height: 2px;
+  border: 0 none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 .redes {
   position: relative;
