@@ -115,6 +115,7 @@ padding-bottom: 140px;
 }
 
 img {
+  text-shadow: 5px 5px gray;
   top: 350px;
   position: relative;
   max-height: 200px;
