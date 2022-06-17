@@ -1,6 +1,15 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+header {
+  margin-bottom: 100px;
+}
 body {
   margin: 0;
-  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0px;
   font-family: monospace;
   color: #004aad;
 }
@@ -9,9 +18,6 @@ h1 {
   font-size: 50px;
   margin-bottom: 0px;
 }
-#estudante {
-  margin-bottom: 0;
-}
 
 #trybe {
   padding: 0;
@@ -19,96 +25,58 @@ h1 {
   align-items: center;
 }
 
-
-.header {
-  height: 100vh;
-  width: 100vw;
-  background-color: #BBBBBB;
-  background-image: url(./img/001.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding: 0px 0px 0px 150px;
-  position: relative;
-}
-
-
-.redes {
-  display: flex;
-}
-
 #logo {
   height: 35px;
   width: 35px;
 }
-
+.redes {
+  display: flex;
+}
 #linkedin {
-  border-radius: 10px 10px 10px 10px;
   background-color: #0077b5;
   border: none;
   color: rgb(0, 0, 0);
-  text-align: top;
-  height: 80px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
 
 #github {
-  border-radius: 10px 10px 10px 10px;
   background-color: #100000;
-  border: none;
   color: rgb(0, 0, 0);
-  text-align: top;
-  height: 80px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
 
 #instagram {
-  border-radius: 10px 10px 10px 10px;
   background-color: #e4405f;
-  border: none;
   color: rgb(0, 0, 0);
-  text-align: top;
-  height: 80px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
 
 #twitter {
-  border-radius: 10px 10px 10px 10px;
   background-color: #1da1f2;
   color: rgb(0, 0, 0);
-  text-align: top;
-  height: 80px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-
-h5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #100000;
-}
-
-.redes-nome-cor {
+.redes-sociais{
   position: relative;
-  top: 120px;
-  border-radius: 10px 10px 10px 10px;
   color: rgb(255, 255, 255);
   background-color: #525252;
+  padding-top: 0;
   padding: 20px;
-  padding-right: 295px;
+  width: 394px;
   text-align: center;
+}
+#img {
+  position: relative;
+  left: 800px;
+  max-height: 300px;
 }
 
 .footer {
@@ -116,4 +84,9 @@ h5 {
   margin-top: 0;
   margin-bottom: 0;
   color: #bbbbbb;
+}
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #100000;
 }
