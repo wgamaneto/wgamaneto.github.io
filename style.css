@@ -38,6 +38,7 @@ body {
 }
 
 #linkedin {
+  margin-right: 10px;
   background-image: url(./img/icons8-linkedin-60.png);
   background-repeat: no-repeat;
   height: 60px;
@@ -56,6 +57,7 @@ body {
 }
 
 #github {
+  margin-right: 10px;
   background-image: url(./img/github60.png);
   background-repeat: no-repeat;
   height: 60px;
@@ -74,6 +76,7 @@ body {
 }
 
 #instagram {
+  margin-right: 10px;
   background-image: url(./img/insta60.png);
   background-repeat: no-repeat;
   height: 60px;
@@ -92,6 +95,7 @@ body {
 }
 
 #twitter {
+  margin-right: 10px;
   background-image: url(./img/icons8-twitter-60.png);
   background-repeat: no-repeat;
   height: 60px;
