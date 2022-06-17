@@ -1,20 +1,22 @@
-
-h1, h2, h3{
+h1,
+h2,
+h3 {
   display: flex;
   font-family: monospace;
   position: relative;
   justify-content: center;
   color: white;
-  
+
 }
 
 h1 {
-  margin-top: 450px;
+  margin-top: 400px;
 }
 
 body {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
+
 .linha {
   width: 250px;
   height: 2px;
@@ -25,53 +27,96 @@ body {
   margin-bottom: 10px;
   background-color: white;
 }
+
 .redes {
+  padding-top: 20px;
+  padding-left: 50px;
   position: relative;
-  justify-content: center;
   display: flex;
 
+
 }
+
 #linkedin {
-  background-color: #0077b5;
-  border: none;
-  color: rgb(0, 0, 0);
+  background-image: url(./img/icons8-linkedin-60.png);
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  font-family: monospace;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#linkedin:hover {
+  background-color: #0077b5;
 }
 
 #github {
-  background-color: #100000;
-  color: rgb(0, 0, 0);
+  background-image: url(./img/github60.png);
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  font-family: monospace;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#github:hover {
+  background-color: #100000;
 }
 
 #instagram {
-  background-color: #e4405f;
-  color: rgb(0, 0, 0);
+  background-image: url(./img/insta60.png);
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  font-family: monospace;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#instagram:hover {
+  background-color: #E4405F;
 }
 
 #twitter {
-  background-color: #1da1f2;
-  color: rgb(0, 0, 0);
+  background-image: url(./img/icons8-twitter-60.png);
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  font-family: monospace;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
+#twitter:hover {
+  background-color: #0b598a;
+}
+
 h5 {
   color: white;
   font-family: monospace;
 }
 
 .footer {
-  margin-top: 365px;
+  margin-top: 345px;
   display: flex;
   position: relative;
   justify-content: center;
 }
-
