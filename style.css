@@ -10,12 +10,15 @@ h3 {
 }
 
 h1 {
-  margin-top: 400px;
+  margin-top: 200px;
+}
+h3 {
+  margin-bottom: 80px;
 }
 
 body {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-padding-bottom: 140px;
+  padding-bottom: 57px;
 }
 
 .linha {
@@ -30,8 +33,8 @@ padding-bottom: 140px;
 }
 
 .redes {
+  justify-content: center;
   padding-top: 20px;
-  padding-left: 50px;
   position: relative;
   display: flex;
 
@@ -116,9 +119,9 @@ padding-bottom: 140px;
 
 img {
   text-shadow: 5px 5px gray;
-  top: 350px;
+  top: 150px;
   position: relative;
-  max-height: 200px;
+  max-height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -131,10 +134,11 @@ h5 {
 }
 
 .footer {
-  top: 100px;
+  top: 50px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   display: flex;
   position: relative;
   justify-content: center;
