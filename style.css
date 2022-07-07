@@ -23,7 +23,7 @@ body {
 
 .linha {
   width: 250px;
-  height: 2px;
+  height: 3px;
   border: 0 none;
   margin-right: auto;
   margin-left: auto;
@@ -57,7 +57,9 @@ body {
 }
 
 #linkedin:hover {
-  background-color: #0b598a
+  background-color: #0b598a;
+  border-radius: 35%;
+
 }
 
 #github {
@@ -77,6 +79,7 @@ body {
 
 #github:hover {
   background-color: #100000;
+  border-radius: 35%
 }
 
 #instagram {
@@ -96,6 +99,7 @@ body {
 
 #instagram:hover {
   background-color: #E4405F;
+  border-radius: 35%
 }
 
 #twitter {
@@ -115,6 +119,7 @@ body {
 
 #twitter:hover {
   background-color: #0077b5;
+  border-radius: 35%
 }
 
 img {
@@ -134,12 +139,13 @@ h5 {
 }
 
 .footer {
-  top: 50px;
-  margin-top: 50px;
+  top: 170px;
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 13%;
   display: flex;
   position: relative;
   justify-content: center;
 }
+
