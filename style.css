@@ -1,39 +1,59 @@
 * {
   margin: 0;
   padding: 0;
+  display: border;
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  height: 20vh;
-  
+h3 {
+  font-size: larger;
 }
 
-h1,h4,h5 {
+h1,
+h2,
+h3,
+h5 {
   display: flex;
+  font-family: monospace;
   justify-content: center;
   color: white;
-  margin: auto;
 }
 
 body {
-  margin: auto;
-  height: 100vh;
-  background-image: url(./img/layered-waves.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-img {
   display: flex;
-  border: 5px solid green;
-  margin: auto;
-  width: 30%;
-  justify-content: center;
+  flex-direction: column;
+  background-image:url(./img/layered-waves.svg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
+}
+header {
+  height: 20%;
 }
 
+main { 
+  top: 30%;
+  flex-direction: column;
+  border: 5px solid green;
+}
 
+.linha {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  max-width: 200px;
+
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  position: relative;
+}
 
 #linkedin {
   margin-right: 10px;
@@ -97,7 +117,7 @@ img {
 }
 
 #twitter {
-  margin-right: 10px;
+  margin-right: 12px;
   background-image: url(./img/icons8-twitter-60.png);
   background-repeat: no-repeat;
   height: 60px;
@@ -116,9 +136,47 @@ img {
   border-radius: 35%
 }
 
+img {
+  top: 30%;
+  max-height: 400px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
 footer {
+  display: flex;
+  padding-top: 50px;
   justify-content: center;
-  flex-direction: row;
-  gap: 5px;
-  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px), (max-height: 700px)  {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+
+  main {
+    padding-top: 10%;
+  }
+
+  img {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  body {
+    width: 100vw;
+    max-height: 1340px;
+  }
 }
