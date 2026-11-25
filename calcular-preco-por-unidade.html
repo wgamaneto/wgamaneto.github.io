@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de Preço por Unidade, 100 g ou 100 mL | Escolha Técnica Brasil</title>
+  <meta name="description" content="Compare duas embalagens pelo preço por unidade, 100 g ou 100 mL somando o frete real no carrinho. Ferramenta gratuita que roda no seu navegador.">
+  <link rel="canonical" href="https://wgamaneto.github.io/calcular-preco-por-unidade/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qual embalagem sai mais barata? Calculadora gratuita">
+  <meta property="og:description" content="Informe o preço, o frete e o conteúdo de duas embalagens. Compare por unidade, 100 g ou 100 mL.">
+  <meta property="og:url" content="https://wgamaneto.github.io/calcular-preco-por-unidade/">
+  <meta property="og:image" content="https://wgamaneto.github.io/midia/pins/calcular-preco-por-unidade.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand-title">Escolha Técnica Brasil<span class="brand-sub">Guias editoriais de decisão de compra baseados em critérios técnicos reais.</span></a>
+    <nav class="top-nav" aria-label="Navegação Principal">
+      <a href="index.html">Guias (26)</a>
+      <a href="ofertas/" class="nav-pill">Ofertas ao Vivo</a>
+      <a href="bio/">Link na Bio</a>
+      <a href="calcular-preco-por-unidade/">Calculadora</a>
+      <a href="disclosure.html">Transparência</a>
+      <a href="privacidade.html">LGPD</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <div class="disclosure-banner" role="note" aria-label="Divulgação Publicitária CONAR">
+  <span class="disclosure-tag">Publicidade | #publi</span>
+  Este conteúdo editorial participa de programas de afiliados. Podemos receber comissão por compras elegíveis sem acréscimo no valor pago por você.
+  <strong>Como associado da Amazon, eu ganho com compras qualificadas.</strong> Não exibimos preços estáticos não verificados de ofertas da Amazon; consulte o valor atualizado diretamente no anunciante.
+</div>
+  <article class="article-shell">
+    <nav class="breadcrumb" aria-label="Caminho da Ferramenta">
+      <a href="index.html">Início</a> / <span>Ferramentas</span> / <span>Calculadora de Preço por Unidade</span>
+    </nav>
+    <h1>Qual embalagem sai mais barata? Calculadora de Preço por Unidade</h1>
+    <div class="article-meta-bar">
+      <span class="badge-code">28</span>
+      <span class="badge">100% no navegador · Zero PII</span>
+      <span><strong>Atualizado em:</strong> 2026-11-24</span>
+    </div>
+    <p>
+      Compare rapidamente duas embalagens ou kits pelo custo real por <strong>100 g</strong>, <strong>100 mL</strong> ou <strong>unidade</strong>.
+      Use sempre o valor exibido no resumo do carrinho com o frete somado para descobrir se o pacote econômico realmente compensa.
+    </p>
+
+    <form id="comparar-precos" class="calc-form" novalidate>
+      <div class="calc-field" style="max-width: 280px;">
+        <label for="unidade">Compare por</label>
+        <select id="unidade" name="unidade" class="calc-select">
+          <option value="g">100 g (peso líquido)</option>
+          <option value="mL">100 mL (volume líquido)</option>
+          <option value="unidade">Unidade (lenços, cápsulas, latas)</option>
+        </select>
+      </div>
+
+      <div class="calc-grid">
+        <fieldset class="calc-fieldset">
+          <legend>Embalagem A</legend>
+          <div class="calc-field">
+            <label for="a-preco">Preço da embalagem (em reais)</label>
+            <input id="a-preco" name="a-preco" class="calc-input" maxlength="16" inputmode="decimal" placeholder="18,90">
+          </div>
+          <div class="calc-field">
+            <label for="a-frete">Frete (opcional)</label>
+            <input id="a-frete" name="a-frete" class="calc-input" maxlength="16" inputmode="decimal" placeholder="0,00">
+          </div>
+          <div class="calc-field">
+            <label for="a-quantidade">Conteúdo total (<span class="unidade-quantidade">g</span>)</label>
+            <input id="a-quantidade" name="a-quantidade" class="calc-input" maxlength="16" inputmode="decimal" placeholder="540">
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-fieldset">
+          <legend>Embalagem B</legend>
+          <div class="calc-field">
+            <label for="b-preco">Preço da embalagem (em reais)</label>
+            <input id="b-preco" name="b-preco" class="calc-input" maxlength="16" inputmode="decimal" placeholder="11,90">
+          </div>
+          <div class="calc-field">
+            <label for="b-frete">Frete (opcional)</label>
+            <input id="b-frete" name="b-frete" class="calc-input" maxlength="16" inputmode="decimal" placeholder="0,00">
+          </div>
+          <div class="calc-field">
+            <label for="b-quantidade">Conteúdo total (<span class="unidade-quantidade">g</span>)</label>
+            <input id="b-quantidade" name="b-quantidade" class="calc-input" maxlength="16" inputmode="decimal" placeholder="360">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="cta-buttons">
+        <button class="btn-cta btn-amazon" type="submit">Calcular qual sai mais barata</button>
+        <button class="btn-cta btn-outline" type="reset">Limpar valores</button>
+      </div>
+
+      <p id="comparacao-status" aria-live="polite" style="font-weight:700;margin:4px 0;"></p>
+      <div id="comparacao-resultado" class="calc-result" hidden>
+        <strong>Resultado padronizado (incluindo frete):</strong>
+        <dl>
+          <div><dt>Embalagem A</dt><dd><output for="a-preco a-frete a-quantidade unidade"></output></dd></div>
+          <div><dt>Embalagem B</dt><dd><output for="b-preco b-frete b-quantidade unidade"></output></dd></div>
+        </dl>
+      </div>
+    </form>
+
+    <section>
+      <h2>Como fazer a conta na Black Friday e em kits recorrentes</h2>
+      <p>
+        Um kit com seis tubos de 90 g soma 540 g no total. Some o frete ao subtotal do kit, divida por 540 e multiplique por 100
+        para encontrar o valor real de cada 100 g. Para comparar pacotes de lenços umedecidos, fraldas ou cápsulas, selecione
+        <strong>Unidade</strong> e divida o total do carrinho pelo número inteiro de itens entregues.
+      </p>
+      <p>
+        <strong>Privacidade (LGPD):</strong> Todo o cálculo acontece localmente no seu navegador em JavaScript. Os valores digitados
+        nunca saem do seu dispositivo e não coletamos nenhum dado pessoal.
+      </p>
+    </section>
+
+    <section class="cta-box">
+      <h2>Guias práticos que usam esta calculadora</h2>
+      <p class="cta-disclosure"><strong>Publicidade (#publi):</strong> Como associado da Amazon, eu ganho com compras qualificadas.</p>
+      <div class="cta-buttons">
+        <a class="btn-cta btn-amazon" href="kits-higiene-como-comparar-preco-por-unidade/">Guia de Kits de Higiene (4 ASINs)</a>
+        <a class="btn-cta btn-accent" href="quando-e-a-black-friday-2026/">Checklist Black Friday 2026</a>
+        <a class="btn-cta btn-outline" href="ofertas/">Ver Radar de Ofertas ao Vivo</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><strong>Escolha Técnica Brasil</strong> — Conteúdo editorial independente em português brasileiro. Publicidade (#publi) sinalizada conforme normas do CONAR.</div>
+    <div>Como associado da Amazon, eu ganho com compras qualificadas.</div>
+    <div>Privacidade e LGPD: Zero coleta de PII, zero rastreamento de IP, sem subtags identificadoras de usuário.</div>
+    <nav class="footer-links" aria-label="Links Institucionais">
+      <a href="index.html">Início</a>
+      <a href="ofertas/">Radar de Ofertas</a>
+      <a href="bio/">Link na Bio (01–30)</a>
+      <a href="calcular-preco-por-unidade/">Calculadora de Preço</a>
+      <a href="pinterest-guias.xml">RSS Pinterest</a>
+      <a href="disclosure.html">Política de Transparência</a>
+      <a href="privacidade.html">Privacidade (LGPD)</a>
+      <a href="termos.html">Termos de Uso</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var priceFormat = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+  function parseAmount(input) {
+    var raw = String(input || "").trim();
+    if (/^\d{1,3}(?:\.\d{3})+,\d{1,2}$/.test(raw)) {
+      return Number(raw.replace(/\./g, "").replace(",", "."));
+    }
+    if (/^\d{1,10}(?:[,.]\d{1,2})?$/.test(raw)) {
+      return Number(raw.replace(",", "."));
+    }
+    return null;
+  }
+  function compareUnits(offers, unit) {
+    var factor = unit === "unidade" ? 1 : 100;
+    var prices = [];
+    for (var i = 0; i < offers.length; i++) {
+      var price = parseAmount(offers[i][0]);
+      var freight = offers[i][1].trim() ? parseAmount(offers[i][1]) : 0;
+      var amount = parseAmount(offers[i][2]);
+      if (price === null) return { error: { row: i, field: 0, message: "Informe o preço da embalagem." } };
+      if (freight === null) return { error: { row: i, field: 1, message: "Informe um frete válido ou deixe em branco." } };
+      if (!amount || amount <= 0 || (factor === 1 && !Number.isInteger(amount))) {
+        return { error: { row: i, field: 2, message: factor === 1 ? "Informe uma quantidade inteira maior que zero." : "Informe o peso ou volume total maior que zero." } };
+      }
+      prices.push((price + freight) / amount * factor);
+    }
+    var a = Math.round(prices[0] * 100);
+    var b = Math.round(prices[1] * 100);
+    return { prices: prices, factor: factor, better: a === b ? null : (a < b ? 0 : 1) };
+  }
+  var form = document.getElementById("comparar-precos");
+  if (!form) return;
+  var unit = form.elements.namedItem("unidade");
+  var fields = ["a", "b"].map(function (p) {
+    return ["preco", "frete", "quantidade"].map(function (n) { return form.elements.namedItem(p + "-" + n); });
+  });
+  var status = document.getElementById("comparacao-status");
+  var result = document.getElementById("comparacao-resultado");
+  var totals = result.querySelectorAll("output");
+  var quantityUnits = form.querySelectorAll(".unidade-quantidade");
+  var quantityLabels = { g: "g", mL: "mL", unidade: "itens" };
+
+  function syncLabels() {
+    quantityUnits.forEach(function (lbl) { lbl.textContent = quantityLabels[unit.value] || "g"; });
+  }
+  form.addEventListener("input", function () {
+    fields.forEach(function (row) { row.forEach(function (f) { f.removeAttribute("aria-invalid"); }); });
+    syncLabels();
+    result.hidden = true;
+    status.textContent = "";
+  });
+  form.addEventListener("reset", function () {
+    setTimeout(function () {
+      syncLabels();
+      result.hidden = true;
+      status.textContent = "";
+    }, 0);
+  });
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var calc = compareUnits(fields.map(function (r) { return r.map(function (f) { return f.value; }); }), unit.value);
+    if (calc.error) {
+      var inv = fields[calc.error.row][calc.error.field];
+      status.textContent = (calc.error.row === 0 ? "Embalagem A: " : "Embalagem B: ") + calc.error.message;
+      inv.setAttribute("aria-invalid", "true");
+      inv.focus();
+      return;
+    }
+    var basis = unit.value === "unidade" ? "unidade" : ("100 " + unit.value);
+    totals[0].value = priceFormat.format(calc.prices[0]) + " por " + basis;
+    totals[1].value = priceFormat.format(calc.prices[1]) + " por " + basis;
+    result.hidden = false;
+    status.textContent = calc.better === null
+      ? "Empate técnico: as duas embalagens custam o mesmo por " + basis + "."
+      : "A Embalagem " + (calc.better === 0 ? "A" : "B") + " sai mais barata por " + basis + ".";
+  });
+  syncLabels();
+})();
+</script>
+</body>
+</html>
